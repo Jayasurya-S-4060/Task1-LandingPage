@@ -1,0 +1,91 @@
+/* section four  */
+
+.section-four-heading-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.section-four-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
+}
+
+.section-four-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px;
+  justify-content: space-between;
+  margin-bottom: 7rem;
+}
+
+.section-four-card {
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease;
+}
+
+.section-four-card:hover {
+  box-shadow: rgba(230, 142, 88, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.section-four-card-image {
+  max-width: 20rem;
+}
+
+.section-four-card-details {
+  padding: 17px 15px;
+}
+
+.section-four-card-details-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.section-four-card-rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.section-four-card-rating-image {
+  line-height: 0.2;
+  width: 13px;
+}
+
+.section-four-card-rating-image img {
+  align-items: center;
+  line-height: 3;
+}
+
+.section-four-card-details-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-four-card-details-location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.section-four-icon-wrapper {
+  position: relative;
+}
+.section-four-icon {
+  position: absolute;
+  width: 5rem;
+  left: 1.5rem;
+}
+
+.section-four-cards-navigation {
+  display: flex;
+  width: 5rem;
+  align-self: flex-end;
+}

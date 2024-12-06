@@ -1,0 +1,36 @@
+
+/* section five  */
+
+.section-five {
+    display: flex;
+    align-items: center;
+    min-height: 525px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .section-five {
+      flex-direction: column;
+      display: flex;
+      height: 649px;
+    }
+    .section-five-img {
+      width: 100%;
+    }
+  }
+  
+  .section-five-heading {
+    width: 50%;
+  }
+  
+  .section-five-img {
+    width: 50%;
+  }
+  
+  .section-five-chat {
+    max-width: 500px;
+    z-index: 5;
+    top: -107px;
+  }
+
+
+  

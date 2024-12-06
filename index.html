@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trabook</title>
+    <link rel="icon" href="./assets/Vector.svg" type="image/x-icon" />
+
     <link rel="stylesheet" href="./index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap"
@@ -16,7 +18,7 @@
   </head>
   <body>
     <div class="main">
-      <div class="section-one main-container">
+      <div class="section-one landing-page-wrapper">
         <header>
           <div class="header">
             <div class="logoSection">
@@ -28,22 +30,24 @@
               </span>
             </div>
             <nav role="navigation">
-              <div class="navLinks">
+              <div class="navLinks " style="color: black;">
                 <ul>
                   <li class="navLink">
-                    <a href="#home" role="menuitem">Home</a>
+                    <a href="#home" role="menuitem"><div class="dc-m">Home</div></a>
                   </li>
                   <li class="navLink">
-                    <a href="#about" role="menuitem">About</a>
+                    <a href="#about" role="menuitem"><div class="dc-m">About</div></a>
                   </li>
                   <li class="navLink">
-                    <a href="#destination" role="menuitem">Destination</a>
+                    <a href="#destination" role="menuitem"
+                      ><div class="dc-m">Destination</div></a
+                    >
                   </li>
                   <li class="navLink">
-                    <a href="#tour" role="menuitem">Tour</a>
+                    <a href="#tour" role="menuitem"><div class="dc-m">Tour</div></a>
                   </li>
                   <li class="navLink">
-                    <a href="#blog" role="menuitem">Blog</a>
+                    <a href="#blog" role="menuitem"><div class="dc-m">Blog</div></a>
                   </li>
                 </ul>
               </div>
@@ -52,9 +56,7 @@
               <div class="userAuthButton loginButton">
                 <a href="#login">Login</a>
               </div>
-              <div class="userAuthButton signupButton fill">
-                <a href="#signup">Sign up</a>
-              </div>
+              <button class="fill">Sign up</button>
             </div>
           </div>
         </header>
@@ -63,8 +65,8 @@
             <div>
               <h1>
                 Get started your exciting
-                <span style="color: #fa7436" class="highlight"> journey </span
-                >with us.
+                <span class="highlight"> journey </span>
+                with us.
               </h1>
             </div>
             <div>
@@ -84,40 +86,51 @@
         <div class="form">
           <div class="form-container">
             <div class="form-group">
-              <div>
-                <label>Select Location</label>
-                <img src="./assets/arrow.png" />
+              <div class="flex-container">
+                <h5>
+                  Location
+                  <span>
+                    <img src="./assets/arrow.png" />
+                  </span>
+                </h5>
               </div>
-              <p>where are you going</p>
+              <div class="d-s">where are you going</div>
             </div>
             <div class="form-group">
-              <div>
-                <label for="date">Select Date</label>
-                <img src="./assets/arrow.png" />
+              <div class="flex-container">
+                <h5 for="date">Date
+                  <span>
+                    <img src="./assets/arrow.png" />
+                  </span>
+                </h5>
+              
               </div>
-              <p>When will you go</p>
+              <div class="d-s">When will you go</div>
             </div>
             <div class="form-group">
-              <div>
-                <label for="guests">Guests</label>
-                <img src="./assets/arrow.png" />
+              <div class="flex-container">
+                <h5 for="guests">Guests  <span>
+                  <img src="./assets/arrow.png" />
+                </span></h5>
+                
               </div>
-              <p>Number of guests</p>
+              <div class="d-s">Number of guests</div>
             </div>
+            <button class="fill">Explore Now</button>
           </div>
         </div>
       </div>
       <div class="section-two main-container">
         <div class="section-two-heading-container">
-          <div>
-            <h1>Things you need <span class="highlight"> to do </span></h1>
-            <p>
-              We ensure that you’ll embark on a perfectly planned, safe vacation
-              at a price you can afford.
-            </p>
+          <div class="text-center">
+            <h2>Things you need <span class="highlight"> to do </span></h2>
+            <div class="d-m">
+              We ensure that you’ll embark on a perfectly planned,<br />
+              safe vacation at a price you can afford.
+            </div>
           </div>
-          <div>
-            <img src="./assets/section2plane.png" />
+          <div class="section-two-icon-wrapper">
+            <img class="section-two-icon" src="./assets/section2plane.png" />
           </div>
         </div>
         <div class="section-two-cards-container">
@@ -125,42 +138,685 @@
             <div>
               <img src="./assets/signup.png" />
             </div>
-            <h3>Sign Up</h3>
-            <p>
+            <br />
+            <h4>Sign Up</h4>
+            <div class="d-s">
               Completes all the work associated with planning and processing
-            </p>
+            </div>
           </div>
           <div class="section-two-card section-two-card-two">
             <div>
               <img src="./assets/money.png" />
             </div>
-            <h3>Worth of Money</h3>
-            <p>
+            <br />
+            <h4>Worth of Money</h4>
+            <div class="d-s">
               After successful access then book from exclusive deals & pricing
-            </p>
-          </div> <div class="section-two-card section-two-card-three">
+            </div>
+          </div>
+          <div class="section-two-card section-two-card-three">
             <div>
               <img src="./assets/location.png" />
             </div>
-            <h3>Exciting Travel</h3>
-            <p>
+            <br />
+
+            <h4>Exciting Travel</h4>
+            <div class="d-s">
               Start and explore a wide range of exciting travel experience.
-            </p>
+            </div>
           </div>
         </div>
       </div>
       <div class="section-three main-container">
-        <div class="section-three-heading-container">
+        <div class="section-three-heading-container text-center">
           <div>
-            <h1>Exclusive  <span class="highlight">deals & discounts </span></h1>
-            <p>
-              We ensure that you’ll embark on a perfectly planned, safe vacation
-              at a price you can afford.
-            </p>
+            <h2>Exclusive <span class="highlight">deals & discounts </span></h2>
+            <div class="d-m">
+              Discover our fantastic early booking discounts<br />
+              & start planning your journey.
+            </div>
           </div>
-          
+        </div>
+        <div class="section-three-cards-container">
+          <div class="section-three-cards">
+            <div class="section-three-card">
+              <div class="section-three-card-image">
+                <img src="./assets/img1.png" width="100%" />
+                <div class="section-three-card-cover" > 
+                  <button class="section-three-card-cover-button fill"   >Book Now</button>
+                </div>
+              </div>
+              <div class="section-three-card-details">
+                <div class="section-three-card-details-title">
+                  <h4 style="margin: 0">Madrid</h4>
+
+                  <div class="section-three-card-rating">
+                    <div lass="section-three-card-rating-image">
+                      <img src="./assets/star.png" width="100%" />
+                    </div>
+                    <div class="d-s">4.8</div>
+                  </div>
+                </div>
+                <div class="section-three-card-details-price">
+                  <div class="section-three-card-details-location">
+                    <div style="width: 10px; line-height: 0.5">
+                      <img src="./assets/locationIcon.png" width="100%" />
+                    </div>
+                    <div class="d-s">Spain</div>
+                  </div>
+                  <div
+                    class="section-three-card-details-pricing flex-container"
+                  >
+                    <div class="d-s">
+                      <s>$950</s>
+                    </div>
+                    <div class="fill-price d-s">$840</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-three-card">
+              <div class="section-three-card-image">
+                <img src="./assets/img2.png" width="100%" />
+                <div class="section-three-card-cover" > 
+                  <button class="section-three-card-cover-button fill"   >Book Now</button>
+                </div>
+              </div>
+              <div class="section-three-card-details">
+                <div class="section-three-card-details-title">
+                  <h4 style="margin: 0">Firenze</h4>
+
+                  <div class="section-three-card-rating">
+                    <div lass="section-three-card-rating-image">
+                      <img src="./assets/star.png" width="100%" />
+                    
+                    </div>
+                    <div class="d-s">4.5</div>
+                  </div>
+                </div>
+                <div class="section-three-card-details-price">
+                  <div class="section-three-card-details-location">
+                    <div style="width: 10px; line-height: 0.5">
+                      <img src="./assets/locationIcon.png" width="100%" />
+                    </div>
+                    <div class="d-s">Italy</div>
+                  </div>
+                  <div
+                    class="section-three-card-details-pricing flex-container"
+                  >
+                    <div class="d-s">
+                      <s>$900</s>
+                    </div>
+                    <div class="fill-price d-s">$750</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-three-card">
+              <div class="section-three-card-image">
+                <img src="./assets/img3.png" width="100%" />
+                <div class="section-three-card-cover" > 
+                  <button class="section-three-card-cover-button fill"   >Book Now</button>
+                </div>
+              </div>
+              <div class="section-three-card-details">
+                <div class="section-three-card-details-title">
+                  <h4 style="margin: 0">Paris</h4>
+
+                  <div class="section-three-card-rating">
+                    <div lass="section-three-card-rating-image">
+                      <img src="./assets/star.png" width="100%" />
+                    </div>
+                    <div class="d-s">4.4</div>
+                  </div>
+                </div>
+                <div class="section-three-card-details-price">
+                  <div class="section-three-card-details-location">
+                    <div style="width: 10px; line-height: 0.5">
+                      <img src="./assets/locationIcon.png" width="100%" />
+                    </div>
+                    <div class="d-s">France</div>
+                  </div>
+                  <div
+                    class="section-three-card-details-pricing flex-container"
+                  >
+                    <div class="d-s">
+                      <s>$850</s>
+                    </div>
+                    <div class="fill-price d-s">$750</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-three-card">
+              <div class="section-three-card-image">
+                <img src="./assets/img4.png" width="100%" />
+                <div class="section-three-card-cover" > 
+                  <button class="section-three-card-cover-button fill"   >Book Now</button>
+                </div>
+              </div>
+              <div class="section-three-card-details">
+                <div class="section-three-card-details-title">
+                  <h4 style="margin: 0">London</h4>
+
+                  <div class="section-three-card-rating">
+                    <div lass="section-three-card-rating-image">
+                      <img src="./assets/star.png" width="100%" />
+                    </div>
+                    <div class="d-s">4.6</div>
+                  </div>
+                </div>
+                <div class="section-three-card-details-price">
+                  <div class="section-three-card-details-location">
+                    <div style="width: 10px; line-height: 0.5">
+                      <img src="./assets/locationIcon.png" width="100%" />
+                    </div>
+                    <div class="d-s">Uk</div>
+                  </div>
+                  <div
+                    class="section-three-card-details-pricing flex-container"
+                  >
+                    <div class="d-s">
+                      <s>$670</s>
+                    </div>
+                    <div class="fill-price d-s">$555</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-three-cards-navigation">
+            <img src="./assets/button.png" width="100%" />
+          </div>
         </div>
       </div>
+      <div class="section-four main-container">
+        <div class="section-four-heading-container text-center">
+          <div>
+            <h2>Best <span class="highlight">vacation plan </span></h2>
+            <div class="d-m">
+              Plan your perfect vacation with our travel agency. Choose<br />
+              among hundreds of all-inclusive offers!
+            </div>
+          </div>
+          <div class="section-four-icon-wrapper">
+            <img class="section-four-icon" src="./assets/tree.png" />
+          </div>
+        </div>
+        <div class="section-four-cards-container">
+          <div class="section-four-cards-navigation">
+            <img src="./assets/button.png" width="100%" />
+          </div>
+          <div class="section-four-cards">
+            <div class="section-four-card">
+              <div class="section-four-card-image">
+                <img src="./assets/location2.png" width="100%" />
+              </div>
+              <div class="section-four-card-details">
+                <div class="section-four-card-details-title">
+                  <h4 style="margin: 0">Rome, Italy</h4>
+                  <div class="unfill-price d-m  bb">$5,32K</div>
+                </div>
+                <div class="section-four-card-details-price">
+                  <div class="section-four-card-details-location">
+                    <div style="width: 10px; line-height: 0.5">
+                      <img src="./assets/trip.png" width="100%" />
+                    </div>
+                    <div class="d-s">10 days trip</div>
+                  </div>
+                  <div class="section-four-card-details-rating">
+                    <div class="section-four-card-rating">
+                      <div lass="section-four-card-rating-image">
+                        <img src="./assets/star.png" width="100%" />
+                      </div>
+                      <div class="d-s">4.8</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-four-card">
+              <div class="section-four-card-image">
+                <img src="./assets/location3.png" width="100%" />
+              </div>
+              <div class="section-four-card-details">
+                <div class="section-four-card-details-title">
+                  <h4 style="margin: 0">London, UK</h4>
+                  <label class="unfill-price d-m  bb"> $2,32K </label>
+                </div>
+                <div class="section-four-card-details-price">
+                  <div class="section-four-card-details-location">
+                    <div style="width: 10px; line-height: 0.5">
+                      <img src="./assets/trip.png" width="100%" />
+                    </div>
+                    <div class="d-s">6 days trip</div>
+                  </div>
+                  <div class="section-four-card-details-rating">
+                    <div class="section-four-card-rating">
+                      <div lass="section-four-card-rating-image">
+                        <img src="./assets/star.png" width="100%" />
+                      </div>
+                      <div class="d-s">4.0</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-four-card">
+              <div class="section-four-card-image">
+                <img src="./assets/location1.png" width="100%" />
+              </div>
+              <div class="section-four-card-details">
+                <div class="section-four-card-details-title">
+                  <h4 style="margin: 0">Osaka, Japan</h4>
+                  <label class="unfill-price d-m bb"> $5,42K </label>
+                </div>
+                <div class="section-four-card-details-price">
+                  <div class="section-four-card-details-location">
+                    <div style="width: 10px; line-height: 0.5">
+                      <img src="./assets/trip.png" width="100%" />
+                    </div>
+                    <div class="d-s">10 days trip</div>
+                  </div>
+                  <div class="section-four-card-details-rating">
+                    <div class="section-four-card-rating">
+                      <div lass="section-four-card-rating-image">
+                        <img src="./assets/star.png" width="100%" />
+                      </div>
+                      <div class="d-s">4.8</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-five main-container">
+        <div class="section-five-heading">
+          <h2>
+            What people say <br /><span class="highlight">about us. </span>
+          </h2>
+          <div class="d-m mb-4">
+            Our Clients send us bunch of smilies with our services and we love
+            them.
+          </div>
+          <div class="section-four-cards-navigation">
+            <img src="./assets/button.png" width="100%" />
+          </div>
+        </div>
+        <div class="section-five-cha">
+          <img src="./assets/chat.png" width="100%" />
+        </div>
+      </div>
+      <div class="section-six main-container">
+        <div class="section-six-heading text-center">
+          <h2>Get update with <span class="highlight">latest blog </span></h2>
+        </div>
+        <div class="section-six-cards">
+          <div class="section-six-card">
+            <div class="section-six-card-image">
+              <img src="./assets/site1.png" width="100%" />
+            </div>
+            <div class="section-six-card-details">
+              <div class="section-six-card-details-title">
+                <h4>The Amazing Difference a Year of Travelling .</h4>
+                <div class="d-s">July 27, 2021</div>
+              </div>
+            </div>
+          </div>
+          <div class="section-six-card">
+            <div class="section-six-card-image">
+              <img src="./assets/site2.png" width="100%" />
+            </div>
+            <div class="section-six-card-details">
+              <div class="section-six-card-details-title">
+                <h4>Travel far enough, you meet yourself.</h4>
+                <div class="d-s">July 27, 2021</div>
+              </div>
+            </div>
+          </div>
+          <div class="section-six-card">
+            <div class="section-six-card-image">
+              <img src="./assets/site3.png" width="100%" />
+            </div>
+            <div class="section-six-card-details">
+              <div class="section-six-card-details-title">
+                <h4>How to Save Money While Visiting Africa .</h4>
+                <div class="d-s">July 27, 2021</div>
+              </div>
+            </div>
+          </div>
+          <div class="section-six-card">
+            <div class="section-six-card-image">
+              <img src="./assets/site4.png" width="100%" />
+            </div>
+            <div class="section-six-card-details">
+              <div class="section-six-card-details-title">
+                <h4>Reflections on 5 Months of Travel: Time to Hang</h4>
+                <div class="d-s">July 27, 2021</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-six-cards-slider">
+          <img src="./assets/slider.png" />
+        </div>
+      </div>
+      <footer class="section-seven main-container">
+        <div>
+          <div class="subscribe-card">
+            <div class="subscribe-input-main">
+              <h2>
+                Subscribe and get exclusive <br />
+                deals & offer
+              </h2>
+
+              <div class="subscribe-input-wrapper">
+                <img src="./assets/mail.svg" class="subscribe-input-icon" />
+                <input
+                  type="text"
+                  class="subscribe-input"
+                  placeholder="Enter your email"
+                />
+                <button class="fill" style="border-radius: 7px;">Subscribe</button>
+              </div>
+            </div>
+          </div>
+          <div class="footer-about">
+            <div class="footer-about-site">
+              <div class="footer-about-site-heading">
+                <span> <img src="./assets/Trabook.png" /> </span>
+                <span>
+                  <img src="./assets/Vector.svg" alt="Vector" />
+                </span>
+              </div>
+              <br />
+              <div class="d-m">
+                Book your trip in minute, get full<br />
+                Control for much longer.
+              </div>
+              <br />
+              <div>
+                <span>
+                  <svg
+                    class="footer-socialmedia-link"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 60 60"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_d_1_378)">
+                      <path
+                        class="footer-socialmedia-link-background"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M30 48C41.0457 48 50 39.0457 50 28C50 16.9543 41.0457 8 30 8C18.9543 8 10 16.9543 10 28C10 39.0457 18.9543 48 30 48Z"
+                        fill="white"
+                      />
+                    </g>
+                    <path
+                      class="footer-socialmedia-link-icon"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M32.5449 25.7991C32.2326 25.7003 31.8735 25.6345 31.5456 25.6345C31.1397 25.6345 30.2654 25.9143 30.2654 26.4577V27.7583H32.3419V29.948H30.2654V35.9903H28.1733V29.948H27.1428V27.7583H28.1733V26.6552C28.1733 24.9924 28.8915 23.6094 30.6245 23.6094C31.2178 23.6094 32.2794 23.6423 32.8571 23.8563L32.5449 25.7991Z"
+                      fill="#444444"
+                    />
+                    <defs>
+                      <filter
+                        id="filter0_d_1_378"
+                        x="0"
+                        y="0"
+                        width="60"
+                        height="60"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset dy="2" />
+                        <feGaussianBlur stdDeviation="5" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="BackgroundImageFix"
+                          result="effect1_dropShadow_1_378"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect1_dropShadow_1_378"
+                          result="shape"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
+                </span>
+                <span>
+                  <svg
+                    class="footer-socialmedia-link"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 60 60"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_d_1_381)">
+                      <path
+                        class="footer-socialmedia-link-background"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M30 48C41.0457 48 50 39.0457 50 28C50 16.9543 41.0457 8 30 8C18.9543 8 10 16.9543 10 28C10 39.0457 18.9543 48 30 48Z"
+                        fill="white"
+                      />
+                    </g>
+                    <g clip-path="url(#clip0_1_381)">
+                      <rect
+                        class="footer-socialmedia-link-icon"
+                        width="14.2222"
+                        height="14.2222"
+                        transform="translate(23.3333 20.4446)"
+                        fill="#444444"
+                      />
+                      <path
+                        d="M35.4722 20.4446H25.4167C24.2681 20.4446 23.3333 21.3793 23.3333 22.5279V32.5835C23.3333 33.7324 24.2681 34.6668 25.4167 34.6668H35.4722C36.6211 34.6668 37.5556 33.7324 37.5556 32.5835V22.5279C37.5556 21.3793 36.6211 20.4446 35.4722 20.4446ZM36.7222 32.5835C36.7222 33.2726 36.1614 33.8335 35.4722 33.8335H25.4167C24.7275 33.8335 24.1667 33.2726 24.1667 32.5835V22.5279C24.1667 21.8387 24.7275 21.2779 25.4167 21.2779H35.4722C36.1614 21.2779 36.7222 21.8387 36.7222 22.5279V32.5835Z"
+                        fill="white"
+                        class="footer-socialmedia-link-background"
+                      />
+                      <path
+                        d="M35.0279 22.1389C34.5684 22.1389 34.1945 22.5128 34.1945 22.9722C34.1945 23.4317 34.5684 23.8056 35.0279 23.8056C35.4873 23.8056 35.8612 23.4317 35.8612 22.9722C35.8612 22.5128 35.4873 22.1389 35.0279 22.1389Z"
+                        fill="white"
+                        class="footer-socialmedia-link-background"
+                      />
+                      <path
+                        d="M30.4445 23.8057C28.3768 23.8057 26.6945 25.4879 26.6945 27.5557C26.6945 29.6234 28.3768 31.3057 30.4445 31.3057C32.5123 31.3057 34.1945 29.6234 34.1945 27.5557C34.1945 25.4879 32.5123 23.8057 30.4445 23.8057ZM30.4445 30.4723C28.8362 30.4723 27.5279 29.164 27.5279 27.5557C27.5279 25.9473 28.8362 24.639 30.4445 24.639C32.0529 24.639 33.3612 25.9473 33.3612 27.5557C33.3612 29.164 32.0529 30.4723 30.4445 30.4723Z"
+                        fill="white"
+                        class="footer-socialmedia-link-background"
+                      />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_d_1_381"
+                        x="0"
+                        y="0"
+                        width="60"
+                        height="60"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset dy="2" />
+                        <feGaussianBlur stdDeviation="5" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="BackgroundImageFix"
+                          result="effect1_dropShadow_1_381"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect1_dropShadow_1_381"
+                          result="shape"
+                        />
+                      </filter>
+                      <clipPath id="clip0_1_381">
+                        <rect
+                          width="14.2222"
+                          height="14.2222"
+                          fill="white"
+                          transform="translate(23.3333 20.4446)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg> </span
+                ><span>
+                  <svg
+                    class="footer-socialmedia-link"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 60 60"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_d_1_375)">
+                      <path
+                        class="footer-socialmedia-link-background"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M30 48C41.0457 48 50 39.0457 50 28C50 16.9543 41.0457 8 30 8C18.9543 8 10 16.9543 10 28C10 39.0457 18.9543 48 30 48Z"
+                        fill="white"
+                      />
+                    </g>
+                    <path
+                      class="footer-socialmedia-link-icon"
+                      d="M37.317 23.1597C36.7365 23.4143 36.118 23.5831 35.4731 23.665C36.1365 23.2689 36.6429 22.6465 36.8809 21.8963C36.2624 22.265 35.5795 22.5255 34.8517 22.6709C34.2643 22.0455 33.4273 21.6582 32.5141 21.6582C30.7424 21.6582 29.3161 23.0963 29.3161 24.8592C29.3161 25.1128 29.3375 25.3567 29.3902 25.5889C26.7297 25.4592 24.3756 24.1841 22.7941 22.2416C22.518 22.7206 22.3561 23.2689 22.3561 23.8592C22.3561 24.9675 22.9268 25.9499 23.7775 26.5187C23.2634 26.5089 22.759 26.3597 22.3317 26.1245C22.3317 26.1343 22.3317 26.147 22.3317 26.1597C22.3317 27.7148 23.4409 29.0065 24.8956 29.3041C24.6351 29.3753 24.3512 29.4094 24.0565 29.4094C23.8517 29.4094 23.6448 29.3977 23.4507 29.3548C23.8653 30.6221 25.0419 31.5538 26.4409 31.5841C25.3522 32.4358 23.9697 32.9489 22.4731 32.9489C22.2107 32.9489 21.959 32.9372 21.7073 32.905C23.1248 33.8192 24.8048 34.3411 26.6165 34.3411C32.5053 34.3411 35.7248 29.4631 35.7248 25.2348C35.7248 25.0933 35.72 24.9567 35.7131 24.8211C36.3483 24.3704 36.8819 23.8075 37.317 23.1597Z"
+                      fill="#444444"
+                    />
+                    <defs>
+                      <filter
+                        id="filter0_d_1_375"
+                        x="0"
+                        y="0"
+                        width="60"
+                        height="60"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset dy="2" />
+                        <feGaussianBlur stdDeviation="5" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="BackgroundImageFix"
+                          result="effect1_dropShadow_1_375"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect1_dropShadow_1_375"
+                          result="shape"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="footer-about-details">
+              <div>
+                <h3>Company</h3>
+                <ul>
+                  <li>
+                    <a href="#"><div class="d-m">About</div></a>
+                  </li>
+                  <li>
+                    <a href="#"><div class="d-m">Careers</div></a>
+                  </li>
+                  <li>
+                    <a href="#"><div class="d-m">Logistic</div></a>
+                  </li>
+                  <li>
+                    <a href="#"><div class="d-m">Privacy & Policy</div></a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3>Contact</h3>
+                <ul>
+                  <li>
+                    <a href="#"> <div class="d-m">Help/FAQ</div></a>
+                  </li>
+                  <li>
+                    <a href="#"> <div class="d-m">Press</div></a>
+                  </li>
+                  <li>
+                    <a href="#"> <div class="d-m">Affiliates</div></a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3>More</h3>
+                <ul>
+                  <li>
+                    <a href="#"> <div class="d-m">Press Centre</div></a>
+                  </li>
+
+                  <li>
+                    <a href="#"><div class="d-m">Our Blog</div></a>
+                  </li>
+
+                  <li>
+                    <a href="#"> <div class="d-m">Low Fare Tips</div></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="copy-rights">
+            <div class="d-m">Copyright, Trabook 2022. All rights reserved.</div>
+            <div class="d-m">Terms & Conditions</div>
+          </div>
+        </div>
+        <div></div>
+      </footer>
     </div>
   </body>
 </html>

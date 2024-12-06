@@ -1,0 +1,109 @@
+/* section three  */
+
+.section-three-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.section-three-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.section-three-card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease;
+}
+
+.section-three-card:hover {
+  box-shadow: rgba(230, 142, 88, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.section-three-card-image {
+  max-width: 20rem;
+  position: relative;
+}
+
+.section-three-card-cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  visibility: hidden; 
+  opacity: 0;
+  background: transparent; 
+  transition: opacity 0.5s;
+}
+
+.section-three-card-cover-button{
+  position: absolute;
+    bottom: 4rem;
+    width: 8rem !important;
+}
+
+.section-three-card:hover .section-three-card-cover {
+  cursor: pointer; 
+  visibility: visible; 
+  opacity: 1; 
+  background: #00000026; 
+}
+
+
+
+.section-three-card-details {
+  padding: 17px 15px;
+}
+
+.section-three-card-details-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.section-three-card-rating {
+  display: flex;
+  gap: 2px;
+}
+.section-three-card-rating-image {
+  line-height: 0.2;
+  width: 13px;
+}
+
+.section-three-card-rating-image img {
+  align-items: center;
+  line-height: 3;
+}
+
+.section-three-card-details-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fill-price {
+  color: #fa7436;
+  background: #fa743647;
+  padding: 2px 3px;
+  border-radius: 4px;
+}
+
+.section-three-card-details-location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.section-three-cards-navigation {
+  width: 5rem;
+  align-self: center;
+}
